@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "462999800217",
+    "firebase_url": "https://fir-auth-b9fad-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "fir-auth-b9fad",
+    "storage_bucket": "fir-auth-b9fad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:462999800217:android:2e7463486293d7e579eb08",
+        "android_client_info": {
+          "package_name": "id.my.okisulton.firebaseauth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "462999800217-v2qnp63qgicph05gmes1m0bksjsbc52j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVnF7Sb6ZbDnbCN9LaUrd8gmGQsLEfp60"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "462999800217-v2qnp63qgicph05gmes1m0bksjsbc52j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
