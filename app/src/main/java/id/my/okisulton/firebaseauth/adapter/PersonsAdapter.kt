@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
+import com.google.firebase.database.FirebaseDatabase
 import id.my.okisulton.firebaseauth.R
 import id.my.okisulton.firebaseauth.model.post.PersonsPost
 
@@ -48,12 +49,32 @@ class PersonsAdapter(
         val etAddress = view.findViewById<EditText>(R.id.editTextTextAddress)
         val btnSave = view.findViewById<Button>(R.id.btnSave)
 
-        etName.text = persons.name
-        etAddress.text = persons.name
+        etName.setText(persons.name)
+        etAddress.setText(persons.address)
 
         builder.setView(view)
         builder.setPositiveButton("Update"){_,_ ->
+            val dbPersons = FirebaseDatabase.getInstance().getReference("Persons")
 
+            val newName = etName.text.toString()
+            val newAddress = etAddress.text.toString()
+
+            if (newName.isEmpty()) {
+                etName.error = "Name can't be null"
+                etName.hasFocus()
+                return@setPositiveButton
+            }
+            if (newAddress.isEmpty()) {
+                etAddress.error = "Address can't be null"
+                etAddress.hasFocus()
+                return@setPositiveButton
+            }
+
+            val updatePersons = PersonsPost(persons.id, newName, newAddress)
+
+            persons.id?.let { dbPersons.child(it).setValue(updatePersons) }
+
+            Toast.makeText(mCtx, "Update Success", Toast.LENGTH_SHORT).show()
         }
         builder.setNegativeButton("No"){_,_ ->
 
