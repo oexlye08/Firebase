@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
                             listPersons.add(person)
                         }
                     }
-                    val adapter = PersonsAdapter(applicationContext, R.layout.item_persons, listPersons)
+                    val adapter = PersonsAdapter(this@MainActivity, R.layout.item_persons, listPersons)
                     binding.lvPersons.adapter = adapter
                 }
             }

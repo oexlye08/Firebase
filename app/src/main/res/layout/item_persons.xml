@@ -27,21 +27,21 @@
     <ImageView
         android:id="@+id/ivDelete"
         android:padding="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_delete" />
+        android:src="@drawable/ic_delete"/>
 
     <ImageView
         android:id="@+id/ivEdit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:padding="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/ivDelete"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_edit" />
+        android:src="@drawable/ic_edit"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

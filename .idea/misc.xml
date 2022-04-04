@@ -3,8 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/osali/StudioProjects/FirebaseAuth/app/src/main/res/drawable/ic_delete.xml" value="0.116" />
+        <entry key="..\:/Users/osali/StudioProjects/FirebaseAuth/app/src/main/res/drawable/ic_edit.xml" value="0.116" />
         <entry key="..\:/Users/osali/StudioProjects/FirebaseAuth/app/src/main/res/layout/activity_main.xml" value="0.22" />
-        <entry key="..\:/Users/osali/StudioProjects/FirebaseAuth/app/src/main/res/layout/item_persons.xml" value="0.22" />
+        <entry key="..\:/Users/osali/StudioProjects/FirebaseAuth/app/src/main/res/layout/fragment_dialog.xml" value="0.25" />
+        <entry key="..\:/Users/osali/StudioProjects/FirebaseAuth/app/src/main/res/layout/item_persons.xml" value="0.67" />
         <entry key="..\:/Users/osali/StudioProjects/FirebaseAuth/app/src/main/res/layout/update_dialog.xml" value="0.12409420289855072" />
       </map>
     </option>
